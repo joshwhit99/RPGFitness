@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="joshwhittle.rpgfitness.showStats">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Current Stats"
+        android:id="@+id/textViewShowStatsCurrentStats"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Strength"
+        android:id="@+id/textViewShowStatsStrength"
+        android:layout_below="@+id/textViewShowStatsCurrentStats"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="33dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Constitution"
+        android:id="@+id/textViewShowStatsConstitution"
+        android:layout_below="@+id/textViewShowStatsStrength"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Dextarity"
+        android:id="@+id/textViewShowStatsDextarity"
+        android:layout_below="@+id/textViewShowStatsConstitution"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Endurance"
+        android:id="@+id/textViewShowStatsEndurance"
+        android:layout_below="@+id/textViewShowStatsDextarity"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Stamina"
+        android:id="@+id/textViewShowStatsStamina"
+        android:layout_below="@+id/textViewShowStatsEndurance"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Wisdom"
+        android:id="@+id/textViewShowStatsWisdom"
+        android:layout_below="@+id/textViewShowStatsStamina"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBarShowStatsStrength"
+        android:layout_above="@+id/textViewShowStatsConstitution"
+        android:layout_centerHorizontal="true"
+        android:max="50"
+        android:progress="10"
+        android:indeterminate="false" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBarShowStatsDextarity"
+        android:max="50"
+        android:progress="10"
+        android:indeterminate="false"
+        android:layout_above="@+id/textViewShowStatsEndurance"
+        android:layout_alignLeft="@+id/progressBarShowStatsStrength"
+        android:layout_alignStart="@+id/progressBarShowStatsStrength" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBarShowStatsConstitution"
+        android:max="50"
+        android:progress="10"
+        android:indeterminate="false"
+        android:layout_above="@+id/textViewShowStatsDextarity"
+        android:layout_centerHorizontal="true" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBarShowStatsEndurance"
+        android:max="50"
+        android:progress="10"
+        android:indeterminate="false"
+        android:layout_below="@+id/textViewShowStatsDextarity"
+        android:layout_centerHorizontal="true" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBarShowStatsStamina"
+        android:max="50"
+        android:progress="10"
+        android:indeterminate="false"
+        android:layout_alignTop="@+id/textViewShowStatsStamina"
+        android:layout_centerHorizontal="true" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBarShowStatsWisdom"
+        android:max="50"
+        android:progress="10"
+        android:indeterminate="false"
+        android:layout_below="@+id/progressBarShowStatsStamina"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Stats"
+        android:id="@+id/buttonShowStatsEnterStats"
+        android:layout_below="@+id/progressBarShowStatsWisdom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="138dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/buttonShowStatsBack"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/buttonShowStatsEnterStats"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
