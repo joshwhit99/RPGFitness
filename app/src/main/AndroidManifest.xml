@@ -15,7 +15,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".showStats"></activity>
+        <activity
+            android:name=".showStats"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".settingStats"
+            android:parentActivityName=".showStats" />
+        <activity
+            android:name=".Workout"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".CreateWorkout" android:parentActivityName=".Workout"></activity>
     </application>
 
 </manifest>
