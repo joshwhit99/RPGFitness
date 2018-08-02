@@ -24,7 +24,28 @@
         <activity
             android:name=".Workout"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".CreateWorkout" android:parentActivityName=".Workout"></activity>
+        <activity
+            android:name=".CreateWorkout"
+            android:parentActivityName=".Workout" />
+        <activity
+            android:name=".Strength"
+            android:parentActivityName=".settingStats" />
+        <activity
+            android:name=".Constitution"
+            android:parentActivityName=".settingStats" />
+        <activity
+            android:name=".Dextarity"
+            android:parentActivityName=".settingStats" />
+        <activity
+            android:name=".Endurance"
+            android:parentActivityName=".settingStats" />
+        <activity
+            android:name=".Stamina"
+            android:parentActivityName=".settingStats" />
+        <activity
+            android:name=".Wisdom"
+            android:parentActivityName=".settingStats" />
+        <activity android:name=".Exercizes"></activity>
     </application>
 
 </manifest>
