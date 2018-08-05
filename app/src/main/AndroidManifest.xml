@@ -45,7 +45,7 @@
         <activity
             android:name=".Wisdom"
             android:parentActivityName=".settingStats" />
-        <activity android:name=".Exercizes"></activity>
+        <activity android:name=".Exercizes" android:parentActivityName=".CreateWorkout"></activity>
     </application>
 
 </manifest>

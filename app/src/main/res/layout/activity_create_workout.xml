@@ -9,33 +9,29 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="joshwhittle.rpgfitness.CreateWorkout">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Workout Name"
-        android:id="@+id/textViewCreateWorkoutWorkoutName"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="42dp" />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Add Exercise"
         android:id="@+id/buttonCreateWorkoutAddExercise"
-        android:layout_below="@+id/textViewCreateWorkoutWorkoutName"
-        android:layout_alignLeft="@+id/textViewCreateWorkoutWorkoutName"
-        android:layout_alignStart="@+id/textViewCreateWorkoutWorkoutName"
-        android:layout_marginTop="49dp" />
+        android:layout_above="@+id/buttonCreateWorkoutStartWorkout"
+        android:layout_alignLeft="@+id/editTextCreateWorkoutText1"
+        android:layout_alignStart="@+id/editTextCreateWorkoutText1" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Start Workout"
         android:id="@+id/buttonCreateWorkoutStartWorkout"
-        android:layout_below="@+id/buttonCreateWorkoutAddExercise"
+        android:layout_centerVertical="true"
         android:layout_alignLeft="@+id/buttonCreateWorkoutAddExercise"
-        android:layout_alignStart="@+id/buttonCreateWorkoutAddExercise"
-        android:layout_marginTop="42dp" />
+        android:layout_alignStart="@+id/buttonCreateWorkoutAddExercise" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextCreateWorkoutText1"
+        android:text="Enter Workout Name"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
